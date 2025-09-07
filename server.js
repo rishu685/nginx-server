@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
         res.end(`Server Error: ${err.code}`);
       }
     } else {
-      res.writeHead(200, { "Content-Type": contentType });
+      res.writeHead(200, { "Content-Type": ContentType });
       res.end(content, "utf8");
     }
   });
